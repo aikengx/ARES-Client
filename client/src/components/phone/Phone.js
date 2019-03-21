@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';
 // // import {Navbar, Button, Nav, NavDropdown} from 'react-bootstrap';
 // import { faStar, faPhone, faUser, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 // // import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -74,7 +74,7 @@ export default class Phone extends Component {
 
       <div className="">
       
-      <div className="container">
+      {/* <div className="container"> */}
         <div className="row">
         <div className="col-md-6 col-md-offset-6 phone">
         <div className="row1">
@@ -180,9 +180,10 @@ export default class Phone extends Component {
         {/* <audio id="remoteAudio"></audio> */}
         <div className="clearfix">
         </div>
+        </div> 
         </div>
-        </div>
-        </div>
+
+        {/* </div> */}
 
       </div>
 

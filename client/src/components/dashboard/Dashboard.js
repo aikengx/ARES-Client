@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import { Button, Navbar, Icon, Panel, Column, Card } from "react-bulma-components/full";
+// import { Link, Redirect } from 'react-router-dom';
+// import { Button, Navbar, Icon, Panel, Column, Card } from "react-bulma-components/full";
 import { faUser, faTasks, faCookieBite, faReply, faEdit, faTrashAlt, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 // import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from 'axios';
 import AddContact from '../contacts/AddContact';
 import EditContact from '../contacts/EditContact';
-import AddTask from '../tasks/AddTask';
+// import AddTask from '../tasks/AddTask';
 import EditTask from '../tasks/EditTask';
 import AddProduct from '../products/AddProduct';
 import EditProduct from '../products/EditProduct';

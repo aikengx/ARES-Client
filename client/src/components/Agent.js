@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import { Column } from "react-bulma-components/full";
+// import { Column } from "react-bulma-components/full";
 // import axios from 'axios';
 // import 'bootstrap/dist/css/bootstrap.css';
 // import { Tab, Tabs } from 'react-bootstrap'
