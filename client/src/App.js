@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 
-import { Button, Section, Hero, Column, Container, Navbar } from "react-bulma-components/full";
+// import { Button, Section, Hero, Column, Container, Navbar } from "react-bulma-components/full";
 
-import { faAt, faHeadset } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin, faInstagram, faTwitter, faFacebook, faSlack } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './App.css';
+// import { faAt, faHeadset } from "@fortawesome/free-solid-svg-icons";
+// import { faGithub, faLinkedin, faInstagram, faTwitter, faFacebook, faSlack } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import './App.css';
 
 // import { Button, Navbar, Icon, Hero, Section, Column } from "react-bulma-components/full";
 // // import Navigation from './components/Navigation';
