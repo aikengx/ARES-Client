@@ -217,7 +217,7 @@ function createSimple() {
     },
     ua: {
       traceSip: false,
-      uri: '102@134.209.126.100',
+      uri: '102@134.209.126.100:6000',
       wsServers: 'wss://134.209.126.100:8089/ws',
       authorizationUser: '102',
       password: '37qIIV18F09m7u8H140s',
