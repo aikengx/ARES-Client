@@ -1,2 +1,1 @@
-# react-cc-client
-# ares-client
+# ARES-Client
