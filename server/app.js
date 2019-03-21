@@ -42,6 +42,8 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 
 const app = express();
 
+
+app.use(express.static(path.join(__dirname, '../client/build')))
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -77,7 +79,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 app.use(cors(
     {
       credentials: true,
-      origin: ['http://localhost:3000']
+      // origin: ['http://localhost:3000']
     }
   )
 );
@@ -95,5 +97,10 @@ app.use('/api', taskRoutes);
 
 const productRoutes = require('./routes/product-routes');
 app.use('/api', productRoutes);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'))
+})
+
 
 module.exports = app;
