@@ -45,6 +45,7 @@ export default class Dashboard extends Component {
 
 
   getAllContacts = () =>{
+    console.log('get all the contacts', process.env)
     axios.get(`https://ares-webrtc.herokuapp.com/api/contacts`)
     .then(responseFromApi => {
       this.setState({
