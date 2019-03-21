@@ -45,7 +45,7 @@ export default class Dashboard extends Component {
 
 
   getAllContacts = () =>{
-    axios.get(`http://localhost:5000/api/contacts`)
+    axios.get(`https://ares-webrtc.herokuapp.com/api/contacts`)
     .then(responseFromApi => {
       this.setState({
         contacts: responseFromApi.data,
@@ -66,7 +66,7 @@ export default class Dashboard extends Component {
 
 
   getAllTasks = () =>{
-    axios.get(`http://localhost:5000/api/tasks`)
+    axios.get(`https://ares-webrtc.herokuapp.com/api/tasks`)
     .then(responseFromApi => {
       this.setState({
         tasks: responseFromApi.data,
@@ -88,7 +88,7 @@ export default class Dashboard extends Component {
 
 
   getAllProducts = () => {
-    axios.get(`http://localhost:5000/api/products`)
+    axios.get(`https://ares-webrtc.herokuapp.com/api/products`)
     .then(responseFromApi => {
       this.setState({
         products: responseFromApi.data,
@@ -111,7 +111,7 @@ export default class Dashboard extends Component {
 
   getContact = (endpoint, id) => {
     //console.log(id);
-    axios.get(`http://localhost:5000/api/${endpoint}/${id}`)
+    axios.get(`https://ares-webrtc.herokuapp.com/api/${endpoint}/${id}`)
     .then(responseFromApi => {
       this.setState({
         contact: responseFromApi.data,
@@ -134,7 +134,7 @@ export default class Dashboard extends Component {
 
   getProduct = (id) => {
     // console.log(id);
-    axios.get(`http://localhost:5000/api/product/${id}`)
+    axios.get(`https://ares-webrtc.herokuapp.com/api/product/${id}`)
     .then(responseFromApi => {
       this.setState({
         product: responseFromApi.data,
@@ -158,7 +158,7 @@ export default class Dashboard extends Component {
   deleteContact = (selected, id) => {
     //console.log(id);
     let endpoint = selected
-    axios.delete(`http://localhost:5000/api/${endpoint}/${id}`)
+    axios.delete(`https://ares-webrtc.herokuapp.com/api/${endpoint}/${id}`)
     .then( responseFromApi =>{
         console.log(responseFromApi)
         if (selected === "contact") {
@@ -178,7 +178,7 @@ export default class Dashboard extends Component {
 
   deleteProduct = (id) => {
     // console.log(id);
-    axios.delete(`http://localhost:5000/api/product/${id}`)
+    axios.delete(`https://ares-webrtc.herokuapp.com/api/product/${id}`)
     .then( responseFromApi => {
         console.log(responseFromApi)
         alert(`Product succesfully removed`)

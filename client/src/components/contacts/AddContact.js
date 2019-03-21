@@ -16,7 +16,7 @@ export default class AddContact extends Component {
     let phone = event.target.phone.value;
     let address = event.target.address.value;
     let image = event.target.image.value;
-    axios.post(`http://localhost:5000/api/${route}`, { name, lname, email, phone, address, image })
+    axios.post(`https://ares-webrtc.herokuapp.com/api/${route}`, { name, lname, email, phone, address, image })
     .then((responseFromApi) => {
       console.log(responseFromApi);
       if ( route === "contact") {

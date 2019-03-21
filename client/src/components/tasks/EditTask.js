@@ -19,7 +19,7 @@ export default class EditContact extends Component {
 
   componentDidMount() {
       console.log(this.props.taskId)
-      axios.get(`http://localhost:5000/api/task/${this.props.taskId}`)
+      axios.get(`https://ares-webrtc.herokuapp.com/api/task/${this.props.taskId}`)
       .then(responseFromApi => {
         console.log(responseFromApi.data)
         this.setState({
@@ -84,7 +84,7 @@ export default class EditContact extends Component {
     let phone = event.target.phone.value;
     let address = event.target.address.value;
     let image = event.target.image.value;
-    axios.put(`http://localhost:5000/api/contact/${this.props.taskId}`, { name, lname, email, phone, address, image })
+    axios.put(`https://ares-webrtc.herokuapp.com/api/contact/${this.props.taskId}`, { name, lname, email, phone, address, image })
     .then((responseFromApi) => {
       console.log(responseFromApi);
         alert("Task updated successfully");

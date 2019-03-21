@@ -19,7 +19,7 @@ export default class EditContact extends Component {
 
   componentDidMount() {
       console.log(this.props.selectionId) 
-      axios.get(`http://localhost:5000/api/${this.props.selectionId}/${this.props.contactId}`)
+      axios.get(`https://ares-webrtc.herokuapp.com/api/${this.props.selectionId}/${this.props.contactId}`)
       .then(responseFromApi => {
         console.log(responseFromApi.data)
         this.setState({
@@ -85,7 +85,7 @@ export default class EditContact extends Component {
     let address = event.target.address.value;
     let image = event.target.image.value;
     if (this.props.selectionId === "contact") {
-      axios.put(`http://localhost:5000/api/contact/${this.props.contactId}`, { name, lname, email, phone, address, image })
+      axios.put(`https://ares-webrtc.herokuapp.com/contact/${this.props.contactId}`, { name, lname, email, phone, address, image })
       .then((responseFromApi) => {
         console.log(responseFromApi);
           alert("Contact updated successfully");
@@ -95,7 +95,7 @@ export default class EditContact extends Component {
         console.log(err) 
       }) 
     } else {
-      axios.put(`http://localhost:5000/api/task/${this.props.contactId}`, { name, lname, email, phone, address, image })
+      axios.put(`https://ares-webrtc.herokuapp.com/api/task/${this.props.contactId}`, { name, lname, email, phone, address, image })
     .then((responseFromApi) => {
       console.log(responseFromApi);
         alert("Task updated successfully");

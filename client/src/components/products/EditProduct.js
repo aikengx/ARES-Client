@@ -16,7 +16,7 @@ export default class EditProduct extends Component {
 
   componentDidMount() {
 
-    axios.get(`http://localhost:5000/api/product/${this.props.productId}`)
+    axios.get(`https://ares-webrtc.herokuapp.com/api/product/${this.props.productId}`)
       .then(responseFromApi => {
         console.log(responseFromApi.data)
         this.setState({
@@ -36,7 +36,7 @@ export default class EditProduct extends Component {
     let name = event.target.name.value;
     let image = event.target.image.value;
     let description = event.target.description.value;
-    axios.put(`http://localhost:5000/api/product/${this.props.productId}`, { name, image, description })
+    axios.put(`https://ares-webrtc.herokuapp.com/api/product/${this.props.productId}`, { name, image, description })
       .then((responseFromApi) => {
         console.log(responseFromApi);
           alert("Product updated successfully");

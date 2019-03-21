@@ -11,7 +11,7 @@ export default class AddProduct extends Component {
     let name = event.target.name.value;
     let image = event.target.image.value; 
     let description = event.target.description.value;
-    axios.post("http://localhost:5000/api/product", { name, image, description })
+    axios.post("https://ares-webrtc.herokuapp.com/api/product", { name, image, description })
     .then((responseFromApi) => {
       console.log(responseFromApi);
       alert("Product created successfully");
