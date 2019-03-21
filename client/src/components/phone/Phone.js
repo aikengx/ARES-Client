@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-// import {Navbar, Button, Nav, NavDropdown} from 'react-bootstrap';
-import { faStar, faPhone, faUser, faEnvelope} from "@fortawesome/free-solid-svg-icons";
-// import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import 'bootstrap/dist/css/bootstrap.css';
+// // import {Navbar, Button, Nav, NavDropdown} from 'react-bootstrap';
+// import { faStar, faPhone, faUser, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+// // import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as SIP from 'sip.js'
 const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '../../../.env') })
